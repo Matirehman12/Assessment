@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- fontawesone link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-white px-md-5 mt-3 mt-md-0">
+        <div class="container-fluid px-md-5">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/imgs/logo.png" width="106px" height="36px" alt="">
+            </a>
+            <div class="d-flex align-items-center gap-3">
+                <div class="d-flex align-items-center gap-3 d-md-none d-sm-block">
+                    <img src="../assets/imgs/Notification - Bell.png" width="40px" height="40px" alt="">
+                    <img src="../assets/imgs/avatar.png" width="40px" height="40px" alt="">
+                </div>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="../assets/imgs/Line.png" width="32px" height="32px" alt="">
+                </button>
+            </div>
+            <div class="collapse navbar-collapse p-2 p-md-0 bg-white" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Travelers
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">dropdown-item-1</a></li>
+                            <li><a class="dropdown-item" href="#">dropdown-item-2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="d-flex align-items-center gap-3">
+                    <ul class="navbar-nav  mb-2 mb-lg-0 gap-3">
+                        <li class="nav-item d-md-none d-lg-block">
+                            <a class="nav-link active" aria-current="page" href="#">Support</a>
+                        </li>
+                        <li class="nav-item d-md-none d-lg-block">
+                            <a class="nav-link active" aria-current="page" href="#"> <i class="fas fa-globe"></i>
+                                Language</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active border br-25px p-2 px-3 text-dark" aria-current="page"
+                                href="#">List
+                                your
+                                property</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-3 d-none d-md-block">
+                        <img src="../assets/imgs/Notification - Bell.png" class="me-3" width="40px" height="40px"
+                            alt="">
+                        <img src="../assets/imgs/avatar.png" width="40px" height="40px" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid px-md-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="header-img">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-8 col-md-7">
+                            <div class="header-title p-md-5 ms-4">
+                                <h1 class="header-heading">Air, sleep, dream</h1>
+                                <p class="header-text">Find and book a great experience.</p>
+                                <button class="search-btn btn m-auto">Start your search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-11 p-lg-4 p-md-3 p-3">
+                <div class="mega-search-box">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="stays-tab" data-bs-toggle="tab" data-bs-target="#stays"
+                                type="button" role="tab" aria-controls="stays" aria-selected="true">Stays</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="flights-tab" data-bs-toggle="tab" data-bs-target="#flights"
+                                type="button" role="tab" aria-controls="flights" aria-selected="false">Flights</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="cars-tab" data-bs-toggle="tab" data-bs-target="#cars"
+                                type="button" role="tab" aria-controls="cars" aria-selected="false">Cars</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="things-to-do-tab" data-bs-toggle="tab"
+                                data-bs-target="#things-to-do" type="button" role="tab" aria-controls="things-to-do"
+                                aria-selected="false">Things to do</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="stays" role="tabpanel" aria-labelledby="stays-tab">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4 mt-4">
+                                    <div class="d-flex gap-3 py-4">
+                                        <img src="../assets/imgs/location-arrow.png" class="mt-1" width="24px"
+                                            height="24px" alt="">
+                                        <div>
+                                            <p class="mb-0 tab-pane-title">Location</p>
+                                            <p class="mb-0 tab-pane-text">Where are you going?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 mt-4 d-none d-lg-block">
+                                    <div class="d-flex gap-3 py-4">
+                                        <img src="../assets/imgs/Calender.png" class="mt-1" width="24px" height="24px"
+                                            alt="">
+                                        <div>
+                                            <p class="mb-0 tab-pane-title">Check in</p>
+                                            <p class="mb-0 tab-pane-text">Add date</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 mt-4 d-none d-lg-block">
+                                    <div class="d-flex gap-3 py-4">
+                                        <img src="../assets/imgs/Calender.png" class="mt-1" width="24px" height="24px"
+                                            alt="">
+                                        <div>
+                                            <p class="mb-0 tab-pane-title">Check out</p>
+                                            <p class="mb-0 tab-pane-text">Add date</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 mt-4 d-none d-md-block d-lg-none">
+                                    <div class="d-flex gap-3 py-4">
+                                        <img src="../assets/imgs/Calender.png" class="mt-1" width="24px" height="24px"
+                                            alt="">
+                                        <div>
+                                            <p class="mb-0 tab-pane-title">Date</p>
+                                            <p class="mb-0 tab-pane-text">Add date</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-5 mt-4 d-none d-md-block">
+                                    <div class="d-flex justify-content-between py-4">
+                                        <div class="d-flex gap-3">
+                                            <img src="../assets/imgs/User.png" class="mt-1" width="24px" height="24px"
+                                                alt="">
+                                            <div>
+                                                <p class="mb-0 tab-pane-title">Travelers</p>
+                                                <p class="mb-0 tab-pane-text">Add guests</p>
+                                            </div>
+                                        </div>
+                                        <div class="search-icon">
+                                            <img src="../assets/imgs/Search.png" width="20px" height="20px" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="flights" role="tabpanel" aria-labelledby="flights-tab">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4 mt-4">
+                                    <div class="d-flex gap-3 py-4">
+                                        <img src="../assets/imgs/location-arrow.png" class="mt-1" width="24px"
+                                            height="24px" alt="">
+                                        <div>
+                                            <p class="mb-0 tab-pane-title">Location</p>
+                                            <p class="mb-0 tab-pane-text">Where are you going?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 mt-4 d-none d-lg-block">
+                                    <div class="d-flex gap-3 py-4">
+                                        <img src="../assets/imgs/Calender.png" class="mt-1" width="24px" height="24px"
+                                            alt="">
+                                        <div>
+                                            <p class="mb-0 tab-pane-title">Check in</p>
+                                            <p class="mb-0 tab-pane-text">Add date</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 mt-4 d-none d-lg-block">
+                                    <div class="d-flex gap-3 py-4">
+                                        <img src="../assets/imgs/Calender.png" class="mt-1" width="24px" height="24px"
+                                            alt="">
+                                        <div>
+                                            <p class="mb-0 tab-pane-title">Check out</p>
+                                            <p class="mb-0 tab-pane-text">Add date</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 mt-4 d-none d-md-block d-lg-none">
+                                    <div class="d-flex gap-3 py-4">
+                                        <img src="../assets/imgs/Calender.png" class="mt-1" width="24px" height="24px"
+                                            alt="">
+                                        <div>
+                                            <p class="mb-0 tab-pane-title">Date</p>
+                                            <p class="mb-0 tab-pane-text">Add date</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 mt-4 d-none d-md-block">
+                                    <div class="d-flex justify-content-between py-4">
+                                        <div class="d-flex gap-3">
+                                            <img src="../assets/imgs/User.png" class="mt-1" width="24px" height="24px"
+                                                alt="">
+                                            <div>
+                                                <p class="mb-0 tab-pane-title">Travelers</p>
+                                                <p class="mb-0 tab-pane-text">Add guests</p>
+                                            </div>
+                                        </div>
+                                        <div class="search-icon">
+                                            <img src="../assets/imgs/Search.png" width="20px" height="20px" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="cars" role="tabpanel" aria-labelledby="cars-tab">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4 mt-4">
+                                    <div class="d-flex gap-3 py-4">
+                                        <img src="../assets/imgs/location-arrow.png" class="mt-1" width="24px"
+                                            height="24px" alt="">
+                                        <div>
+                                            <p class="mb-0 tab-pane-title">Location</p>
+                                            <p class="mb-0 tab-pane-text">Where are you going?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 mt-4 d-none d-lg-block">
+                                    <div class="d-flex gap-3 py-4">
+                                        <img src="../assets/imgs/Calender.png" class="mt-1" width="24px" height="24px"
+                                            alt="">
+                                        <div>
+                                            <p class="mb-0 tab-pane-title">Check in</p>
+                                            <p class="mb-0 tab-pane-text">Add date</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 mt-4 d-none d-lg-block">
+                                    <div class="d-flex gap-3 py-4">
+                                        <img src="../assets/imgs/Calender.png" class="mt-1" width="24px" height="24px"
+                                            alt="">
+                                        <div>
+                                            <p class="mb-0 tab-pane-title">Check out</p>
+                                            <p class="mb-0 tab-pane-text">Add date</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 mt-4 d-none d-md-block d-lg-none">
+                                    <div class="d-flex gap-3 py-4">
+                                        <img src="../assets/imgs/Calender.png" class="mt-1" width="24px" height="24px"
+                                            alt="">
+                                        <div>
+                                            <p class="mb-0 tab-pane-title">Date</p>
+                                            <p class="mb-0 tab-pane-text">Add date</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 mt-4 d-none d-md-block">
+                                    <div class="d-flex justify-content-between py-4">
+                                        <div class="d-flex gap-3">
+                                            <img src="../assets/imgs/User.png" class="mt-1" width="24px" height="24px"
+                                                alt="">
+                                            <div>
+                                                <p class="mb-0 tab-pane-title">Travelers</p>
+                                                <p class="mb-0 tab-pane-text">Add guests</p>
+                                            </div>
+                                        </div>
+                                        <div class="search-icon">
+                                            <img src="../assets/imgs/Search.png" width="20px" height="20px" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="things-to-do" role="tabpanel" aria-labelledby="things-to-do-tab">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4 mt-4">
+                                    <div class="d-flex gap-3 py-4">
+                                        <img src="../assets/imgs/location-arrow.png" class="mt-1" width="24px"
+                                            height="24px" alt="">
+                                        <div>
+                                            <p class="mb-0 tab-pane-title">Location</p>
+                                            <p class="mb-0 tab-pane-text">Where are you going?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 mt-4 d-none d-lg-block">
+                                    <div class="d-flex gap-3 py-4">
+                                        <img src="../assets/imgs/Calender.png" class="mt-1" width="24px" height="24px"
+                                            alt="">
+                                        <div>
+                                            <p class="mb-0 tab-pane-title">Check in</p>
+                                            <p class="mb-0 tab-pane-text">Add date</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 mt-4 d-none d-lg-block">
+                                    <div class="d-flex gap-3 py-4">
+                                        <img src="../assets/imgs/Calender.png" class="mt-1" width="24px" height="24px"
+                                            alt="">
+                                        <div>
+                                            <p class="mb-0 tab-pane-title">Check out</p>
+                                            <p class="mb-0 tab-pane-text">Add date</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 mt-4 d-none d-md-block d-lg-none">
+                                    <div class="d-flex gap-3 py-4">
+                                        <img src="../assets/imgs/Calender.png" class="mt-1" width="24px" height="24px"
+                                            alt="">
+                                        <div>
+                                            <p class="mb-0 tab-pane-title">Date</p>
+                                            <p class="mb-0 tab-pane-text">Add date</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 mt-4 d-none d-md-block">
+                                    <div class="d-flex justify-content-between py-4">
+                                        <div class="d-flex gap-3">
+                                            <img src="../assets/imgs/User.png" class="mt-1" width="24px" height="24px"
+                                                alt="">
+                                            <div>
+                                                <p class="mb-0 tab-pane-title">Travelers</p>
+                                                <p class="mb-0 tab-pane-text">Add guests</p>
+                                            </div>
+                                        </div>
+                                        <div class="search-icon">
+                                            <img src="../assets/imgs/Search.png" width="20px" height="20px" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-lg container-fluid p-lg-5 p-md-3 p-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mt-md-5 mb-5">
+                    <h1 class="text-center section-title">Let’s go on an adventure</h1>
+                    <p class="text-center section-subtitle">Find and book a great experience.</p>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="owl-carousel advanture-carousal">
+                    <div class="item">
+                        <div class="d-flex align-items-center justify-content-center gap-3">
+                            <img src="../assets/imgs/Holiday Summer 2.png" width="160px" height="160px" alt="Image 1">
+                            <div class="mt-3">
+                                <p class="resort-text">Luxury resort at the sea</p>
+                                <p class="resort-place-badge">9,326 places</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <div class="d-flex align-items-center justify-content-center gap-3">
+                            <img src="../assets/imgs/Camping.png" width="160px" height="160px" alt="Image 1">
+                            <div class="mt-3">
+                                <p class="resort-text">Camping amidst the wild</p>
+                                <p class="resort-place-badge">9,326 places</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="d-flex align-items-center justify-content-center gap-3">
+                            <img src="../assets/imgs/Holiday Winter.png" width="160px" height="160px" alt="Image 1">
+                            <div class="mt-3">
+                                <p class="resort-text">Luxury resort at the sea</p>
+                                <p class="resort-place-badge">9,326 places</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="d-flex align-items-center justify-content-center gap-3">
+                            <img src="../assets/imgs/Camping.png" width="160px" height="160px" alt="Image 1">
+                            <div class="mt-3">
+                                <p class="resort-text">Luxury resort at the sea</p>
+                                <p class="resort-place-badge">9,326 places</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-12 mt-5">
+                <div class="mt-md-5 mb-5">
+                    <h1 class="text-md-center text-start section-title">Travel to make memories all <br> around the
+                        world</h1>
+                    <p class="text-md-center text-start section-subtitle">Find trips that fit a flexible lifestyle</p>
+                </div>
+            </div>
+            <div class="col-md-11 mt-lg-5 mt-md-2 pt-3">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md-4">
+                        <div>
+                            <span class="badge-01">01</span>
+                            <h2 class="badge-title mt-3">Find trips that fit a flexible lifestyle</h2>
+                            <p class="badge-subtitle">Stacks is a production-ready library of stackable content
+                                blocks built in React Native</p>
+                        </div>
+                        <div class="pt-4">
+                            <span class="badge-02">02</span>
+                            <h2 class="badge-title mt-3">Travel with more confidence</h2>
+                            <p class="badge-subtitle">Stacks is a production-ready library of stackable content
+                                blocks built in React Native</p>
+                        </div>
+                        <div class="pt-4">
+                            <span class="badge-03">03</span>
+                            <h2 class="badge-title mt-3">Find trips that fSee what’s really included</h2>
+                            <p class="badge-subtitle">Stacks is a production-ready library of stackable content
+                                blocks built in React Native</p>
+                        </div>
+                        <div>
+                            <button class="search-btn btn m-inherit mt-4">Start your search</button>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <img src="../assets/imgs/about illustration.png" width="100%" alt="" height="640px"
+                            class="d-none d-md-block">
+                        <img src="../assets/imgs/sm-about illustration.png" width="100%" alt="" height="610px"
+                            class="d-block d-md-none mt-5">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-12 mt-lg-5 mt-md-3 pt-md-5 pt-3">
+                <div class="mt-md-5 mb-5">
+                    <h1 class="text-center section-title">How it work</h1>
+                    <p class="text-center section-subtitle">Keep calm & travel on</p>
+                </div>
+            </div>
+            <div class="col-md-11 mt-3">
+                <div class="row justify-content-between">
+                    <div class="col-lg-3 col-md-4">
+                        <center>
+                            <img src="../assets/imgs/icon box-1.png" width="100%" alt="">
+                            <h5 class="box-icon-title">Book & relax</h5>
+                            <p class="box-icon-subtitle w-75">We realize ideas from simple to complex, everything
+                                becomes
+                                easy to
+                                use.</p>
+                        </center>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <center>
+                            <img src="../assets/imgs/icon box-2.png" width="100%" alt="">
+                            <h5 class="box-icon-title">Smart checklist</h5>
+                            <p class="box-icon-subtitle w-75">We realize ideas from simple to complex, everything
+                                becomes
+                                easy to
+                                use.</p>
+                        </center>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <center>
+                            <img src="../assets/imgs/icon box-3.png" width="100%" alt="">
+                            <h5 class="box-icon-title">Save more</h5>
+                            <p class="box-icon-subtitle w-75">We realize ideas from simple to complex, everything
+                                becomes
+                                easy to
+                                use.</p>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-12 mt-lg-5 mt-3 pt-5">
+                <div class="mt-md-5 mb-5">
+                    <h1 class="text-center section-title d-none d-lg-block">Live anywhere</h1>
+                    <h1 class="text-center section-title d-block d-lg-none">Stunning Work</h1>
+
+                    <p class="text-center section-subtitle">Keep calm & travel on</p>
+                </div>
+            </div>
+            <div class="col-md-11 mt-3 mb-5">
+                <div class="owl-carousel hotel-stay-carousal">
+                    <div class="item">
+                        <div class="card border-0">
+                            <img src="../assets/imgs/greatcold.png" class="" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Enjoy the great cold</h5>
+                                <p class="card-text">6,879 properties</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0">
+                            <img src="../assets/imgs/sunrise.png" class="" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Pick up the earliest sunrise</h5>
+                                <p class="card-text">6,879 properties</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0">
+                            <img src="../assets/imgs/uniquestay.png" class="" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Unique stay</h5>
+                                <p class="card-text">6,879 properties</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <center>
+                    <button class="btn loader-btn mt-md-5 mt-3 mb-5">
+                        <img src="../assets/imgs/Loader.png" width="16px" height="16px" alt="">
+                        Load more</button>
+                </center>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-lg container-fluid p-lg-5 p-md-3">
+        <div class="row bg-light br-25px p-md-3 p-lg-5 p-4 mt-5 gosomewhere align-items-center">
+            <div class="col-md-12">
+                <div class=" mb-5">
+                    <h1 class="text-start section-title">Go somewhere</h1>
+                    <p class="text-start section-subtitle">Let’s go on an adventure</p>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-8">
+                <ul class="nav nav-pills advanture-tabs align-items-center" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-featured-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-featured" type="button" role="tab" aria-controls="pills-featured"
+                            aria-selected="true">
+                            <img src="../assets/imgs/Coin.png" width="16px" height="16px" alt="" class="active-icon">
+                            <img src="../assets/imgs/Coingray.png" width="16px" height="16px" alt=""
+                                class="inactive-icon">
+                            Featured</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-family-friendly-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-family-friendly" type="button" role="tab"
+                            aria-controls="pills-family-friendly" aria-selected="false">
+                            <img src="../assets/imgs/Coin.png" width="16px" height="16px" alt="" class="active-icon">
+                            <img src="../assets/imgs/Coingray.png" width="16px" height="16px" alt=""
+                                class="inactive-icon">
+                            Family-friendly</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-on-sale-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-on-sale" type="button" role="tab" aria-controls="pills-on-sale"
+                            aria-selected="false">
+                            <img src="../assets/imgs/Coin.png" width="16px" height="16px" alt="" class="active-icon">
+                            <img src="../assets/imgs/Coingray.png" width="16px" height="16px" alt=""
+                                class="inactive-icon">
+                            On sale</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-sub-nav-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-sub-nav" type="button" role="tab" aria-controls="pills-sub-nav"
+                            aria-selected="false">
+                            <img src="../assets/imgs/Coin.png" width="16px" height="16px" alt="" class="active-icon">
+                            <img src="../assets/imgs/Coingray.png" width="16px" height="16px" alt=""
+                                class="inactive-icon">
+                            Sub nav</button>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <div>
+                    <select name="tabs" id="tabs-select" class="added-select form-select tab-select">
+                    </select>
+                </div>
+                <select name="" id="" class="added-select form-select mt-3">
+                    <option value="">Recently added</option>
+                </select>
+            </div>
+            <div class="col-md-12">
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-featured" role="tabpanel"
+                        aria-labelledby="pills-featured-tab">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-4 col-md-4 mt-4">
+                                <div class="card featured-cards">
+                                    <img src="../assets/imgs/card-1.png" width="100%" height="228px"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h5 class="card-title mb-0 text-start">The grand resort</h5>
+                                                <p class="card-text text-start">Karineside</p>
+                                            </div>
+                                            <div class="rate p-2">
+                                                <p class="old-rate mb-1">$699</p>
+                                                <p class="new-rate">$548</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="d-flex justify-content-between">
+                                            <p class="card-date">Tue,Jul 20 - Fri, Jul 23</p>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <img src="../assets/imgs/star.png" width="16px" height="16px" alt="">
+                                                <span class="star-rating">4.9</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 mt-4">
+                                <div class="card featured-cards">
+                                    <img src="../assets/imgs/card-2.png" width="100%" height="228px"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h5 class="card-title mb-0 text-start">The grand resort</h5>
+                                                <p class="card-text text-start">East Barrett</p>
+                                            </div>
+                                            <div class="rate p-2">
+                                                <p class="old-rate mb-1">$699</p>
+                                                <p class="new-rate">$548</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="d-flex justify-content-between">
+                                            <p class="card-date">Tue,Jul 20 - Fri, Jul 23</p>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <img src="../assets/imgs/star.png" width="16px" height="16px" alt="">
+                                                <span class="star-rating">4.9</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 mt-4">
+                                <div class="card featured-cards">
+                                    <img src="../assets/imgs/card-3.png" width="100%" height="228px"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h5 class="card-title mb-0 text-start">The grand resort</h5>
+                                                <p class="card-text text-start">Steuberbury</p>
+                                            </div>
+                                            <div class="rate p-2">
+                                                <p class="old-rate mb-1">$699</p>
+                                                <p class="new-rate">$548</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="d-flex justify-content-between">
+                                            <p class="card-date">Tue,Jul 20 - Fri, Jul 23</p>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <img src="../assets/imgs/star.png" width="16px" height="16px" alt="">
+                                                <span class="star-rating">4.9</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 mt-4">
+                                <div class="card featured-cards">
+                                    <img src="../assets/imgs/card-4.png" width="100%" height="228px"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h5 class="card-title mb-0 text-start">The grand resort</h5>
+                                                <p class="card-text text-start">Idaview</p>
+                                            </div>
+                                            <div class="rate p-2">
+                                                <p class="old-rate mb-1">$699</p>
+                                                <p class="new-rate">$548</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="d-flex justify-content-between">
+                                            <p class="card-date">Tue,Jul 20 - Fri, Jul 23</p>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <img src="../assets/imgs/star.png" width="16px" height="16px" alt="">
+                                                <span class="star-rating">4.9</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 mt-4">
+                                <div class="card featured-cards">
+                                    <img src="../assets/imgs/card-5.png" width="100%" height="228px"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h5 class="card-title mb-0 text-start">The grand resort</h5>
+                                                <p class="card-text text-start">Yasminfurt</p>
+                                            </div>
+                                            <div class="rate p-2">
+                                                <p class="old-rate mb-1">$699</p>
+                                                <p class="new-rate">$548</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="d-flex justify-content-between">
+                                            <p class="card-date">Tue,Jul 20 - Fri, Jul 23</p>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <img src="../assets/imgs/star.png" width="16px" height="16px" alt="">
+                                                <span class="star-rating">4.9</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 mt-4">
+                                <div class="card featured-cards">
+                                    <img src="../assets/imgs/card-6.png" width="100%" height="228px"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h5 class="card-title mb-0 text-start">The grand resort</h5>
+                                                <p class="card-text text-start">North Edenshire</p>
+                                            </div>
+                                            <div class="rate p-2">
+                                                <p class="old-rate mb-1">$699</p>
+                                                <p class="new-rate">$548</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="d-flex justify-content-between">
+                                            <p class="card-date">Tue,Jul 20 - Fri, Jul 23</p>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <img src="../assets/imgs/star.png" width="16px" height="16px" alt="">
+                                                <span class="star-rating">4.9</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 mt-4 d-md-none d-lg-block">
+                                <div class="card featured-cards">
+                                    <img src="../assets/imgs/card-1.png" width="100%" height="228px"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h5 class="card-title mb-0 text-start">The grand resort</h5>
+                                                <p class="card-text text-start">Archibaldtown</p>
+                                            </div>
+                                            <div class="rate p-2">
+                                                <p class="old-rate mb-1">$699</p>
+                                                <p class="new-rate">$548</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="d-flex justify-content-between">
+                                            <p class="card-date">Tue,Jul 20 - Fri, Jul 23</p>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <img src="../assets/imgs/star.png" width="16px" height="16px" alt="">
+                                                <span class="star-rating">4.9</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-4 mt-4 d-md-none d-lg-block">
+                                <div class="card featured-cards">
+                                    <img src="../assets/imgs/card-7.png" width="100%" height="228px"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h5 class="card-title mb-0 text-start">The grand resort</h5>
+                                                <p class="card-text text-start">West Gregoria</p>
+                                            </div>
+                                            <div class="rate p-2">
+                                                <p class="old-rate mb-1">$699</p>
+                                                <p class="new-rate">$548</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="d-flex justify-content-between">
+                                            <p class="card-date">Tue,Jul 20 - Fri, Jul 23</p>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <img src="../assets/imgs/star.png" width="16px" height="16px" alt="">
+                                                <span class="star-rating">4.9</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 my-3">
+                                <center>
+                                    <button class="btn loader-btn mt-5">View all</button>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-family-friendly" role="tabpanel"
+                        aria-labelledby="pills-family-friendly-tab">...</div>
+                    <div class="tab-pane fade" id="pills-on-sale" role="tabpanel" aria-labelledby="pills-on-sale-tab">
+                        ...</div>
+                    <div class="tab-pane fade" id="pills-sub-nav" role="tabpanel" aria-labelledby="pills-sub-nav-tab">
+                        ...</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-lg container-fluid p-lg-5 p-md-3 p-5">
+        <div class="row align-items-center mt-md-3 pt-md-5 pt-lg-0">
+            <div class="col-xl-4 col-lg-6 col-md-6 mt-md-4 ps-md-5 ps-lg-0">
+                <p class="mb-0 fw-bold" style="font-family: Poppins;">supercharge your planning powers</p>
+                <h1 class="section-title text-start">Travel to make memories all around the world</h1>
+                <p class="card-text text-start fs-16">Stacks is a production-ready library of stackable content blocks
+                    built in React Native.</p>
+
+                <div class="postion-relative d-flex">
+                    <input type="number" name="" id="" class="number-input" placeholder="Enter your phone number">
+                    <div class="number-arrow">
+                        <img src="../assets/imgs/white-arrow.png" width="14px" height="9px" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-8 col-lg-6 col-md-6 mt-4">
+                <img src="../assets/imgs/phone mockup.png" width="100%" alt="" height="676.4px"
+                    class="object-fit-scale-down d-none d-md-block">
+                <img src="../assets/imgs/phone mockup-sm.png" width="100%" alt=""
+                    class="object-fit-scale-down d-md-none d-block">
+
+            </div>
+        </div>
+
+        <div class="row justify-content-center ">
+            <div class="col-lg-12 col-md-11 mt-5 pt-5">
+                <div class="d-flex justify-content-between mt-3 mb-5">
+                    <div>
+                        <h1 class=" text-start section-title">Browse by property type</h1>
+                        <p class=" text-start section-subtitle">Let’s go on an adventure</p>
+                    </div>
+                    <div class="d-none d-md-block">
+                        <img src="../assets/imgs/Left arrow.png" alt="">
+                        <img src="../assets/imgs/Right arrow.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-11 mt-md-3 mb-5">
+                <div class="property-carousal owl-carousel">
+                    <div class="item">
+                        <div class="card border-0">
+                            <div class="position-absolute m-3">
+                                <span class="badge-01 bg-dark text-white">20% off</span>
+                            </div>
+                            <img src="../assets/imgs/card-1.png" class="br-25px" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="../assets/imgs/home.png" alt="">
+                                    <h5 class="card-title text-start mb-0">Nature house</h5>
+                                </div>
+                                <p class="card-text text-start">650,596</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0">
+                            <div class="position-absolute m-3">
+                                <span class="badge-01 bg-dark text-white">20% off</span>
+                            </div>
+                            <img src="../assets/imgs/card-7.png" class="br-25px" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="../assets/imgs/home.png" alt="">
+                                    <h5 class="card-title text-start mb-0">Nature house</h5>
+                                </div>
+                                <p class="card-text text-start">650,596</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0">
+                            <div class="position-absolute m-3">
+                                <span class="badge-01 bg-dark text-white">20% off</span>
+                            </div>
+                            <img src="../assets/imgs/card-1.png" class="br-25px" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="../assets/imgs/home.png" alt="">
+                                    <h5 class="card-title text-start mb-0">Nature house</h5>
+                                </div>
+                                <p class="card-text text-start">650,596</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0">
+                            <div class="position-absolute m-3">
+                                <span class="badge-01 bg-dark text-white">20% off</span>
+                            </div>
+                            <img src="../assets/imgs/card-7.png" class="br-25px" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="../assets/imgs/home.png" alt="">
+                                    <h5 class="card-title text-start mb-0">Nature house</h5>
+                                </div>
+                                <p class="card-text text-start">650,596</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-lg container-fluid p-lg-5 p-md-3">
+        <div class="row bg-light br-25px p-md-3 p-4  mt-lg-5 m-md-5 m-lg-0 gosomewhere">
+            <div class="col-md-12 mt-5">
+                <div class="mt-5 mb-5">
+                    <h1 class="text-center section-title">Explore nearby</h1>
+                    <p class="text-center section-subtitle">10,789 beautiful places to go</p>
+                </div>
+            </div>
+
+
+            <div class="col-md-12">
+                <div class="nearby-carousal owl-carousel d-md-none d-block">
+                    <div class="item">
+                        <div class="card border-0 p-2 br-16px">
+                            <span class="badge-01 bg-light text-secondary w-fit-content">1480</span>
+                            <center>
+                                <img src="../assets/imgs/img-1.png" width="80px" height="80px" class="mt-4" alt="...">
+                            </center>
+                            <div class="card-body mb-5">
+                                <h5 class="card-title">Thompsonbury</h5>
+                                <p class="card-text">15 minutes drive</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 p-2 br-16px">
+                            <span class="badge-01 bg-light text-secondary w-fit-content">1480</span>
+                            <center>
+                                <img src="../assets/imgs/img-2.png" width="80px" height="80px" class="mt-4" alt="...">
+                            </center>
+                            <div class="card-body mb-5">
+                                <h5 class="card-title">Hudsontown</h5>
+                                <p class="card-text">2 hours drive</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 p-2 br-16px">
+                            <span class="badge-01 bg-light text-secondary w-fit-content">1480</span>
+                            <center>
+                                <img src="../assets/imgs/img-3.png" width="80px" height="80px" class="mt-4" alt="...">
+                            </center>
+                            <div class="card-body mb-5">
+                                <h5 class="card-title">Lake Marcelle</h5>
+                                <p class="card-text">15 minutes drive</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 p-2 br-16px">
+                            <span class="badge-01 bg-light text-secondary w-fit-content">1480</span>
+                            <center>
+                                <img src="../assets/imgs/img-1.png" width="80px" height="80px" class="mt-4" alt="...">
+                            </center>
+                            <div class="card-body mb-5">
+                                <h5 class="card-title">New Keagan</h5>
+                                <p class="card-text">15 minutes drive</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 p-2 br-16px">
+                            <span class="badge-01 bg-light text-secondary w-fit-content">1480</span>
+                            <center>
+                                <img src="../assets/imgs/img-4.png" width="80px" height="80px" class="mt-4" alt="...">
+                            </center>
+                            <div class="card-body mb-5">
+                                <h5 class="card-title">MacGyverton</h5>
+                                <p class="card-text">2 hours drive</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 p-2 br-16px">
+                            <span class="badge-01 bg-light text-secondary w-fit-content">1480</span>
+                            <center>
+                                <img src="../assets/imgs/img-5.png" width="80px" height="80px" class="mt-4" alt="...">
+                            </center>
+                            <div class="card-body mb-5">
+                                <h5 class="card-title">North Justen</h5>
+                                <p class="card-text">2 hours drive</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 p-2 br-16px">
+                            <span class="badge-01 bg-light text-secondary w-fit-content">1480</span>
+                            <center>
+                                <img src="../assets/imgs/img-6.png" width="80px" height="80px" class="mt-4" alt="...">
+                            </center>
+                            <div class="card-body mb-5">
+                                <h5 class="card-title">Port Elyseberg</h5>
+                                <p class="card-text">15 minutes drive</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 p-2 br-16px">
+                            <span class="badge-01 bg-light text-secondary w-fit-content">1480</span>
+                            <center>
+                                <img src="../assets/imgs/img-7.png" width="80px" height="80px" class="mt-4" alt="...">
+                            </center>
+                            <div class="card-body mb-5">
+                                <h5 class="card-title">Danielmouth</h5>
+                                <p class="card-text">2 hours drive</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 p-2 br-16px">
+                            <span class="badge-01 bg-light text-secondary w-fit-content">1480</span>
+                            <center>
+                                <img src="../assets/imgs/img-7.png" width="80px" height="80px" class="mt-4" alt="...">
+                            </center>
+                            <div class="card-body mb-5">
+                                <h5 class="card-title">Russelville</h5>
+                                <p class="card-text">15 minutes drive</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 d-none d-md-block mb-5">
+                <div class="row justify-content-center">
+                    <div class="col-xl-2 col-lg-3 col-md-4 mt-5">
+                        <div class="card border-0 p-2 br-16px">
+                            <span class="badge-01 bg-light text-secondary w-fit-content">1480</span>
+                            <center>
+                                <img src="../assets/imgs/img-1.png" width="80px" height="80px" class="mt-4" alt="...">
+                            </center>
+                            <div class="card-body">
+                                <h5 class="card-title">Thompsonbury</h5>
+                                <p class="card-text">15 minutes drive</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 mt-5">
+                        <div class="card border-0 p-2 br-16px">
+                            <span class="badge-01 bg-light text-secondary w-fit-content">1480</span>
+                            <center>
+                                <img src="../assets/imgs/img-2.png" width="80px" height="80px" class="mt-4" alt="...">
+                            </center>
+                            <div class="card-body">
+                                <h5 class="card-title">Hudsontown</h5>
+                                <p class="card-text">2 hours drive</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 mt-5">
+                        <div class="card border-0 p-2 br-16px">
+                            <span class="badge-01 bg-light text-secondary w-fit-content">1480</span>
+                            <center>
+                                <img src="../assets/imgs/img-3.png" width="80px" height="80px" class="mt-4" alt="...">
+                            </center>
+                            <div class="card-body">
+                                <h5 class="card-title">Lake Marcelle</h5>
+                                <p class="card-text">15 minutes drive</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 mt-5">
+                        <div class="card border-0 p-2 br-16px">
+                            <span class="badge-01 bg-light text-secondary w-fit-content">1480</span>
+                            <center>
+                                <img src="../assets/imgs/img-1.png" width="80px" height="80px" class="mt-4" alt="...">
+                            </center>
+                            <div class="card-body">
+                                <h5 class="card-title">New Keagan</h5>
+                                <p class="card-text">15 minutes drive</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 mt-5">
+                        <div class="card border-0 p-2 br-16px">
+                            <span class="badge-01 bg-light text-secondary w-fit-content">1480</span>
+                            <center>
+                                <img src="../assets/imgs/img-4.png" width="80px" height="80px" class="mt-4" alt="...">
+                            </center>
+                            <div class="card-body">
+                                <h5 class="card-title">MacGyverton</h5>
+                                <p class="card-text">2 hours drive</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mb-5">
+                    <div class="col-xl-2 col-lg-3 col-md-4 mt-5 d-md-none d-xl-block">
+                        <div class="card border-0 p-2 br-16px">
+                            <span class="badge-01 bg-light text-secondary w-fit-content">1480</span>
+                            <center>
+                                <img src="../assets/imgs/img-5.png" width="80px" height="80px" class="mt-4" alt="...">
+                            </center>
+                            <div class="card-body">
+                                <h5 class="card-title">North Justen</h5>
+                                <p class="card-text">2 hours drive</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 mt-5 d-md-none d-xl-block">
+                        <div class="card border-0 p-2 br-16px">
+                            <span class="badge-01 bg-light text-secondary w-fit-content">1480</span>
+                            <center>
+                                <img src="../assets/imgs/img-6.png" width="80px" height="80px" class="mt-4" alt="...">
+                            </center>
+                            <div class="card-body">
+                                <h5 class="card-title">Port Elyseberg</h5>
+                                <p class="card-text">15 minutes drive</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 mt-5 d-md-none d-xl-block">
+                        <div class="card border-0 p-2 br-16px">
+                            <span class="badge-01 bg-light text-secondary w-fit-content">1480</span>
+                            <center>
+                                <img src="../assets/imgs/img-7.png" width="80px" height="80px" class="mt-4" alt="...">
+                            </center>
+                            <div class="card-body">
+                                <h5 class="card-title">Danielmouth</h5>
+                                <p class="card-text">2 hours drive</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 mt-5 d-md-none d-xl-block">
+                        <div class="card border-0 p-2 br-16px">
+                            <span class="badge-01 bg-light text-secondary w-fit-content">1480</span>
+                            <center>
+                                <img src="../assets/imgs/img-7.png" width="80px" height="80px" class="mt-4" alt="...">
+                            </center>
+                            <div class="card-body">
+                                <h5 class="card-title">Russelville</h5>
+                                <p class="card-text">15 minutes drive</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-lg container-fluid p-lg-5 p-md-3 p-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-11 mt-lg-5 pt-5">
+                <div class="d-flex align-items-center justify-content-between mt-3 mb-5">
+                    <div class="d-flex align-items-md-center gap-3 flex-md-row flex-column align-items-start">
+                        <h1 class=" text-start section-title hosted-text">Best hosts of the </h1>
+                        <h1 class=" text-start section-title d-block d-md-none hosted-text" style="color: #3B71FE;">
+                            month </h1>
+
+                        <Select class="month-select d-none d-md-block">
+                            <option value="">month</option>
+                        </Select>
+                    </div>
+                    <div class="d-none d-md-block">
+                        <img src="../assets/imgs/Left arrow.png" alt="">
+                        <img src="../assets/imgs/Right arrow.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-11">
+                <div class="property-carousal owl-carousel">
+                    <div class="item">
+                        <div class="card br-25px">
+                            <div class="w-fit-content bg-white text-dark badge-01 bg-white w-fit-content d-flex align-items-center gap-2 position-absolute ms-3"
+                                style="margin-top: 20px;">
+                                <img src="../assets/imgs/star.png" width="12px" height="12px" alt="">
+                                <span class="star-rating ">
+                                    4.9
+                                </span>
+                            </div>
+                            <img src="../assets/imgs/img-9.png" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Antone Heller</h5>
+                                <p class="card-text">Gaylordside</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card br-25px">
+                            <div class="w-fit-content bg-white text-dark badge-01 bg-white w-fit-content d-flex align-items-center gap-2 position-absolute ms-3"
+                                style="margin-top: 20px;">
+                                <img src="../assets/imgs/star.png" width="12px" height="12px" alt="">
+                                <span class="star-rating ">
+                                    4.9
+                                </span>
+                            </div>
+                            <img src="../assets/imgs/img-12.png" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Antone Heller</h5>
+                                <p class="card-text">Gaylordside</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card br-25px">
+                            <div class="w-fit-content bg-white text-dark badge-01 bg-white w-fit-content d-flex align-items-center gap-2 position-absolute ms-3"
+                                style="margin-top: 20px;">
+                                <img src="../assets/imgs/star.png" width="12px" height="12px" alt="">
+                                <span class="star-rating ">
+                                    4.9
+                                </span>
+                            </div>
+                            <img src="../assets/imgs/img-10.png" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Antone Heller</h5>
+                                <p class="card-text">Gaylordside</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card br-25px">
+                            <div class="w-fit-content bg-white text-dark badge-01 bg-white w-fit-content d-flex align-items-center gap-2 position-absolute ms-3"
+                                style="margin-top: 20px;">
+                                <img src="../assets/imgs/star.png" width="12px" height="12px" alt="">
+                                <span class="star-rating ">
+                                    4.9
+                                </span>
+                            </div>
+                            <img src="../assets/imgs/img-11.png" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Antone Heller</h5>
+                                <p class="card-text">Gaylordside</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-11 mt-lg-5 pt-5">
+                <div
+                    class="d-flex justify-content-md-between align-items-md-end align-items-start mt-3 mb-5 flex-md-row flex-column justify-content-start">
+                    <div class="d-flex align-items-center gap-3">
+                        <div>
+                            <p class="mb-0">fleet travel ui kit</p>
+                            <h1 class=" text-start section-title">Book a ticket <br> and just leave</h1>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="booknow-btn btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-11">
+                <img src="../assets/imgs/Frame 756.png" width="100%" alt="" class="d-none d-md-bock">
+                <img src="../assets/imgs/sm-Frame 752.png" width="100%" alt="" class="d-block d-md-none">
+
+            </div>
+
+        </div>
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-12 mt-md-5 pt-5">
+                <div class="mt-5 mb-5">
+                    <h1 class="section-title">Browse by category </h1>
+                    <p class="section-subtitle">Let’s go on an adventure</p>
+                </div>
+            </div>
+            <div class="col-md-11 mt-3">
+                <div class="category-carousal owl-carousel">
+                    <div class="item">
+                        <div class="card br-25px">
+                            <div class="w-fit-content bg-light text-dark badge-01" style="margin-top: 20px;">
+                                256.356
+                            </div>
+                            <div class="card-body">
+                                <div>
+                                    <img src="../assets/imgs/building-icon.png" width="32px" height="32px" class="mt-5"
+                                        alt="...">
+                                    <h5 class="card-title text-start mb-0 mt-3">City house</h5>
+                                    <p class="card-text text-start fs-12">Small description</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card br-25px">
+                            <div class="w-fit-content bg-light text-dark badge-01" style="margin-top: 20px;">
+                                256.356
+                            </div>
+                            <div class="card-body">
+                                <div>
+                                    <img src="../assets/imgs/building-icon.png" width="32px" height="32px" class="mt-5"
+                                        alt="...">
+                                    <h5 class="card-title text-start mb-0 mt-3">City house</h5>
+                                    <p class="card-text text-start fs-12">Small description</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card br-25px">
+                            <div class="w-fit-content bg-light text-dark badge-01" style="margin-top: 20px;">
+                                256.356
+                            </div>
+                            <div class="card-body">
+                                <div>
+                                    <img src="../assets/imgs/building-icon.png" width="32px" height="32px" class="mt-5"
+                                        alt="...">
+                                    <h5 class="card-title text-start mb-0 mt-3">City house</h5>
+                                    <p class="card-text text-start fs-12">Small description</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card br-25px">
+                            <div class="w-fit-content bg-light text-dark badge-01" style="margin-top: 20px;">
+                                256.356
+                            </div>
+                            <div class="card-body">
+                                <div>
+                                    <img src="../assets/imgs/building-icon.png" width="32px" height="32px" class="mt-5"
+                                        alt="...">
+                                    <h5 class="card-title text-start mb-0 mt-3">City house</h5>
+                                    <p class="card-text text-start fs-12">Small description</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card br-25px">
+                            <div class="w-fit-content bg-light text-dark badge-01" style="margin-top: 20px;">
+                                256.356
+                            </div>
+                            <div class="card-body">
+                                <div>
+                                    <img src="../assets/imgs/building-icon.png" width="32px" height="32px" class="mt-5"
+                                        alt="...">
+                                    <h5 class="card-title text-start mb-0 mt-3">City house</h5>
+                                    <p class="card-text text-start fs-12">Small description</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card br-25px">
+                            <div class="w-fit-content bg-light text-dark badge-01" style="margin-top: 20px;">
+                                256.356
+                            </div>
+                            <div class="card-body">
+                                <div>
+                                    <img src="../assets/imgs/building-icon.png" width="32px" height="32px" class="mt-5"
+                                        alt="...">
+                                    <h5 class="card-title text-start mb-0 mt-3">City house</h5>
+                                    <p class="card-text text-start fs-12">Small description</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid border-top mt-md-5">
+        <div class="container">
+            <footer class="footer">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-2 col-md-3">
+                        <img src="../assets/imgs/logo.png" alt="">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6">
+                        <ul class="nav footer-nav flex-column">
+                            <li class="nav-item"><a href="" class="nav-link">About</a></li>
+                            <li class="nav-item"><a href="" class="nav-link">Projects</a></li>
+                            <li class="nav-item"><a href="" class="nav-link d-block d-md-none">What We Do</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6">
+                        <ul class="nav footer-nav flex-column">
+                            <li class="nav-item"><a href="" class="nav-link d-none d-md-block">What We Do</a></li>
+                            <li class="nav-item"><a href="" class="nav-link">Press</a></li>
+                            <li class="nav-item"><a href="" class="nav-link d-block d-md-none">Jobs</a></li>
+                            <li class="nav-item"><a href="" class="nav-link d-block d-md-none">Download</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-4 d-none d-md-block">
+                        <ul class="nav footer-nav flex-column">
+                            <li class="nav-item"><a href="" class="nav-link">Jobs</a></li>
+                            <li class="nav-item"><a href="" class="nav-link">Download</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-12 mt-4 mt-md-0">
+                        <p class="fs-7 fw-bold text-dark">Join our community 🔥</p>
+                        <div class="position-relative d-flex">
+                            <input type="number" name="" id="" class="number-input"
+                                placeholder="Enter your phone number">
+                            <div class="number-arrow">
+                                <img src="../assets/imgs/white-arrow.png" width="14px" height="9px" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <hr>
+            <div>
+                <p class="card-text fs-12 text-start mb-3 mb-md-2">Copyright © 2021 UI8 LLC. All rights reserved</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="../assets/js/home.js"></script>
+
+</html>
